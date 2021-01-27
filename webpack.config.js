@@ -15,7 +15,7 @@ const config = {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: '[hash].[name].js',
+    filename: '[name].[fullhash].js',
   },
   resolve: {
     alias: {
