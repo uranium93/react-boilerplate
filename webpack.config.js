@@ -73,15 +73,12 @@ if (isProdEnv) {
     minimizer: [new TerserWebpackPlugin()],
   };
 } else {
+  config.devtool = 'inline-source-map';
   config.devServer = {
     port: 8080,
-    disableHostCheck: true,
     open: true,
+    contentBase: './dist',
     hot: true,
-    compress: true,
-    stats: 'errors-only',
-    overlay: true,
-    historyApiFallback: true,
   };
 }
 
