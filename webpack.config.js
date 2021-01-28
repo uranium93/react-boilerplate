@@ -19,7 +19,7 @@ const config = {
   },
   resolve: {
     alias: {
-      src: './src',
+      src: resolve(__dirname, 'src/'),
     },
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
